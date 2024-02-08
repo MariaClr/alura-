@@ -1,0 +1,159 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #c0c0c0;
+    --botao-azul: #167bf7;
+    --cor-de-fundo: #00030c;
+    --fonte-principal:  'Inter', sans-serif  ;
+    --fonte-secundaria:  'Inter', sans-serif;
+    --botao-azul-efeito: #6391c9;
+    --botao-azul-ativo: #0b315f;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-secundaria);
+}
+
+.principal {
+    background-image: url("../Assents/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+}
+.container__caixa{
+    margin: 0 6em;
+}
+.container__titulo {
+    font-size: 1.75rem;
+}
+.container__imagem{
+    margin: 1em 0 2em 0;
+}
+.container__botao{
+    background-color: var(--botao-azul);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    color: var(--branco-principal);
+    display: block;
+    text-decoration: none;
+    margin-bottom:1em ;
+}
+
+
+.botao_secundario {
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+}
+
+.container__aviso {
+    font-size: 0.75rem;
+    color: var(--cinza-secundario);
+}
+/* container secundario */
+.secundario{
+    align-items: center;
+    margin: 0 10em;
+}
+.secundario__imagem{
+    width: 80%;
+}
+
+.descricao__titulo{
+    font-weight: 700;
+    font-size: 3rem;
+    margin-bottom: 0.2rem;
+    color: var(--branco-principal);
+}
+.descricao__texto{
+    color: var(--cinza-secundario);
+}
+/* container terciario */
+
+.container__descricao{
+    padding: 2em;
+}
+.secundario__botao{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+/* terceira sessao */
+.terciario{
+    margin: 0 15em;
+    align-items: center;
+    
+}
+/* quarta sessao */
+.dispositivos{
+    text-align: center;
+}
+.dispositivos__lista{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.dispositivos__titulos{
+    font-size: 3rem;
+    margin:0 0 0 5rem;
+}
+.dispositivos__items{
+    font-size: 2rem;
+    color: var(--branco-principal);
+}
+
+/* rodape */
+.rodape{
+    text-align: center ;
+    margin:10rem 0 5rem 0;
+    
+}
+
+.rodape__lista{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 1rem;
+    margin: 2rem 0;
+}
+.lista__link a {
+    color: var(--branco-principal);
+    text-decoration: none;
+
+}
+.rodape__Texto{
+    margin: 2rem 0;
+    color: var(--cinza-secundario);
+    font-size: 0.8rem;
+}
+/* efeitos */
+.container__botao:hover{
+    background-color: var(--botao-azul-efeito);
+    color: var(--cor-de-fundo);
+}
+.container__botao:active{
+    background-color: var(--botao-azul-ativo);
+}
+.lista__link a:hover{
+    color: var(--botao-azul);
+}
+.lista__link a:active{
+    color: blue;
+}
